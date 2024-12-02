@@ -3,7 +3,8 @@ SCRIPT=$(readlink -f "$0")
 CWD=$(dirname "$SCRIPT")
 
 # Default value for directory which contains your gallery images
-image_folder=$CWD/../test/example_dir/
+# image_folder=$CWD/../test/example_dir/
+image_folder=/home/ma/git/gs_ws/vloc/src/visual_robot_localization/visual_robot_localization/test/example_dir/output/images
 
 # Default value for the localization method
 localization_combination_name=netvlad+superpoint_aachen+superglue

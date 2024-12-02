@@ -3,14 +3,14 @@ SCRIPT=$(readlink -f "$0")
 CWD=$(dirname "$SCRIPT")
 
 # Defaults
-IMAGE_DB_ROOT=$CWD/../test/example_dir/
+IMAGE_DB_ROOT=/home/ma/git/gs_ws/vloc/src/visual_robot_localization/visual_robot_localization/test/example_dir/output/images
 GLOBAL_EXTRACTOR='netvlad'
 LOCAL_EXTRACTOR='superpoint_aachen'
 LOCAL_MATCHER='superglue' 
 
 N_MATCHES=4 # try with 25
-IM_SIZE_X=800
-IM_SIZE_Y=600
+IM_SIZE_X=1280
+IM_SIZE_Y=800
 IM_FOV=90
 
 # Parse the CLI args if given

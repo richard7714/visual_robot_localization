@@ -80,8 +80,10 @@ def main(img_dir,
     print('Extracting global features...')
     global_feature_path = extract_features.main(extractor_confs[global_extractor_name], img_dir, output_dir, as_half=False, image_list = img_list)
 
+    # 유사도 비교를 통해 이미지 pair 생성
     create_place_recognition_pairs(str(img_dir), str(global_feature_path), n_matches, str(place_reg_pair_path))
 
+    # 
     create_empty_colmap(str(img_dir), str(empty_sfm), im_size_x, im_size_y, im_fov, odometry_suffix, coord_transform)
 
     print('Extracting local features...')

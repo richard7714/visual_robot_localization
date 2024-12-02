@@ -63,7 +63,6 @@ def create_empty_colmap(img_dir, output_dir, im_size_x, im_size_y, fov, odometry
 
         for i, img_path in enumerate(imgs):
             odom_path = pattern.sub(odometry_suffix, img_path)
-
             with open(odom_path, 'r') as odom_file:
                 odom = json.load(odom_file)
 

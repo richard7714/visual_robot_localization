@@ -33,19 +33,19 @@ def generate_launch_description():
         ),
         launch.actions.DeclareLaunchArgument(
     	name='gallery_global_descriptor_path',
-    	default_value='/opt/visual_robot_localization/src/visual_robot_localization/test/example_dir/outputs/netvlad+superpoint_aachen+superglue/global-feats-netvlad.h5'
+    	default_value='/home/ma/git/gs_ws/vloc/src/visual_robot_localization/visual_robot_localization/test/example_dir/outputs/netvlad+superpoint_aachen+superglue/global-feats-netvlad.h5'
         ),
         launch.actions.DeclareLaunchArgument(
     	name='gallery_local_descriptor_path',
-    	default_value='/opt/visual_robot_localization/src/visual_robot_localization/test/example_dir/outputs/netvlad+superpoint_aachen+superglue/feats-superpoint-n4096-r1024.h5'
+    	default_value='/home/ma/git/gs_ws/vloc/src/visual_robot_localization/visual_robot_localization/test/example_dir/outputs/netvlad+superpoint_aachen+superglue/feats-superpoint-n4096-r1024.h5'
         ),
         launch.actions.DeclareLaunchArgument(
     	name='image_gallery_path',
-    	default_value='/opt/visual_robot_localization/src/visual_robot_localization/test/example_dir/'
+    	default_value='/home/ma/git/gs_ws/vloc/src/visual_robot_localization/visual_robot_localization/test/example_dir/'
         ),
         launch.actions.DeclareLaunchArgument(
     	name='gallery_sfm_path',
-    	default_value='/opt/visual_robot_localization/src/visual_robot_localization/test/example_dir/outputs/netvlad+superpoint_aachen+superglue/sfm_netvlad+superpoint_aachen+superglue'
+    	default_value='/home/ma/git/gs_ws/vloc/src/visual_robot_localization/visual_robot_localization/test/example_dir/outputs/netvlad+superpoint_aachen+superglue/sfm_netvlad+superpoint_aachen+superglue'
         ),
         launch.actions.DeclareLaunchArgument(
     	name='compensate_sensor_offset',

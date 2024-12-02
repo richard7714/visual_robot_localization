@@ -26,7 +26,7 @@ def generate_test_description():
             	'visual_pose_estimate_subscription_topic': '/carla/ego_vehicle/visual_pose_estimate'
             },
             {
-            	'test_image_path': path_to_test + '/example_dir/im_0001.png'
+            	'test_image_path': path_to_test + '/example_dir/019.png'
     	    }
     	    ]
             )
